@@ -1,0 +1,135 @@
+      /* Header styles */
+      .header_div {
+        background-color: #FFD700; /* Darker yellow background color */
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body{
+        overflow: auto;
+
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .header {
+        color: #000080; /* Dark blue text color */
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .story_header{
+        padding: 20px;
+        text-align:center;
+        background-color:#FFFFFF
+      }
+      .image-container{
+        flex-basis: 50%;
+        position: relative;
+
+      }
+      .text-container{
+        flex-basis:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+      }
+      /* Navigation menu styles */
+      .nav {
+        background-color: #000080; /* Dark blue background color */
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+      }
+      .nav a {
+        color: #FFFFFF; /* White text color */
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .insta {
+        padding-top: 25px;
+      }
+      .insta img {
+        width:10%;
+        height: auto;
+      }
+
+      .slideshow-container {
+        position: relative;
+        margin: 30px auto;
+        overflow: hidden;
+        box-sizing: border-box;
+        border: 2px solid black;
+        display: inline-block;
+        padding: 10px;
+      }
+      
+      @media (max-width: 767px) {
+        .slideshow-container {
+          border-width: 1px;
+          padding: 5px;
+        }
+      }
+      
+      @media (min-width: 768px) and (max-width: 991px) {
+        .slideshow-container {
+          border-width: 1.5px;
+          padding: 7px;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        .slideshow-container {
+          border-width: 2px;
+          padding: 10px;
+        }
+      }      
+      .story {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .story.active {
+        opacity: 1;
+      }
+      
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .prev {
+        left: 10px;
+      }
+      
+      .next {
+        right: 10px;
+      }
+      .Overdoses23{
+        position: relative;
+        height: 30px;
+      }
+      .positioner{
+          position: fixed;
+      }
